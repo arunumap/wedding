@@ -1,0 +1,24 @@
+!!! html5
+%html
+  %head
+    %title Wedding
+    = stylesheet_link_tag "public/application", media: 'all'
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body
+    .page-wrapper
+      = render 'shared/header'
+    = yield
+:javascript
+  WebFontConfig = {
+    google: { families: [ 'Anton::latin', 'Shadows+Into+Light::latin', 'Droid+Serif::latin', 'Oswald::latin', 'Amatic+SC::latin', 'Love+Ya+Like+A+Sister::latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();
