@@ -2,12 +2,47 @@
 %html
   %head
     %title Wedding
-    = stylesheet_link_tag "public/application", media: 'all'
+    = stylesheet_link_tag "application", media: 'all'
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
-    .page-wrapper
-      = render 'shared/header'
+    .header.parallax-bar
+      .header-container
+        = link_to "Lajja + Arun", "", :class=> 'logo', style: "background:url('#{image_path('wedding-logo-light.png')}') no-repeat;background-size: contain;"
+        .mobile-btn
+        .clear
+        -# %ul
+        -#   = link_to event_exhibitors_path(@event) do
+        -#     %li.nav-button
+        -#       .nav-icon-bg.nav-icon-startups
+        -#       %p.nav-text Startups
+        -#       .clear
+        -#   = link_to event_sponsors_path(@event) do
+        -#     %li.nav-button
+        -#       .nav-icon-bg.nav-icon-sponsors
+        -#       %p.nav-text Sponsors
+        -#       .clear
+        -#   = link_to event_why_exhibit_path(@event) do
+        -#     %li.nav-button
+        -#       .nav-icon-bg.nav-icon-exhibit
+        -#       %p.nav-text Exhibit
+        -#       .clear
+        -#   =link_to start_event_attendees_path(@event) do
+        -#     %li.nav-button
+        -#       .nav-icon-bg.nav-icon-attend
+        -#       %p.nav-text Attend
+        -#       .clear
+        -#   = link_to event_blog_path(@event) do
+        -#     %li.nav-button
+        -#       .nav-icon-bg.nav-icon-blog
+        -#       %p.nav-text Blog
+        -#       .clear
+        -#   = link_to event_contact_path(@event) do
+        -#     %li.nav-button.nav-margin-fix
+        -#       .nav-icon-bg.nav-icon-contact
+        -#       %p.nav-text Contact
+        -#       .clear
+        -# .clear
     = yield
 :javascript
   WebFontConfig = {

@@ -1,0 +1,53 @@
+!!! html5
+%html
+  %head
+    %title
+      Arun + Lajja
+      = stylesheet_link_tag "parallax/ny_application", media: "all"
+      = javascript_include_tag "parallax/ny_application"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, , maximum-scale=1.0, user-scalable=0">
+    = csrf_meta_tags
+    <meta name="description" content="The Science Fair for Tech Startups - #{@event.name} is a full-day event for the #{@event.city} Tech community to embrace our roots, startups.">
+    <meta name="keywords" content="#{yield :metatags}">
+
+  %body
+    .header.parallax-bar
+      .header-container
+        = link_to "#{@event.name}", "", :class=> 'logo', style: "background:url('#{@event.logo.url}') no-repeat;background-size: contain;"
+        .mobile-btn
+        .clear
+        %ul
+          = link_to event_exhibitors_path(@event) do
+            %li.nav-button
+              .nav-icon-bg.nav-icon-startups
+              %p.nav-text Startups
+              .clear
+          = link_to event_sponsors_path(@event) do
+            %li.nav-button
+              .nav-icon-bg.nav-icon-sponsors
+              %p.nav-text Sponsors
+              .clear
+          = link_to event_why_exhibit_path(@event) do
+            %li.nav-button
+              .nav-icon-bg.nav-icon-exhibit
+              %p.nav-text Exhibit
+              .clear
+          =link_to start_event_attendees_path(@event) do
+            %li.nav-button
+              .nav-icon-bg.nav-icon-attend
+              %p.nav-text Attend
+              .clear
+          = link_to event_blog_path(@event) do
+            %li.nav-button
+              .nav-icon-bg.nav-icon-blog
+              %p.nav-text Blog
+              .clear
+          = link_to event_contact_path(@event) do
+            %li.nav-button.nav-margin-fix
+              .nav-icon-bg.nav-icon-contact
+              %p.nav-text Contact
+              .clear
+        .clear
+        =link_to "", "https://twitter.com/TechDayHQ", class: "parallax-social-icons parallax-twitter-icons", target: "_blank"
+        =link_to "", "https://www.facebook.com/pages/TechDay-HQ/661979443878952", class: "parallax-social-icons parallax-fb-icons", target: "_blank"
+    = yield

@@ -1,1 +1,232 @@
-.home-container
+#page-wrapper
+  .section-one
+    .spacer
+    .container
+      .page-info-holder
+        .page-info-title
+          Arun + Lajja
+        .page-info-subhead
+          Wedding
+        .page-info-list
+
+          .bullet
+          Waldorf Astoria
+      .when_text_holder
+        .date Sept 24-27
+        .location El Conquistador
+        .time Puerto Rico
+      .register-button-holder
+        .button-container
+          =link_to rsvp_path do
+            .register-button
+              .register-button-icon.attend
+              .text RSVP
+              .clear
+          -# .description It’s free and will only take a second
+        -# .button-container.margin-fix
+        -#   =link_to new_event_participant_path(@event) do
+        -#     .register-button
+        -#       .register-button-icon.exhibit
+        -#       .text Register to Exhibit
+        -#       .clear
+        -#   .description Hurry, we totally sold out last year
+      .learn_more_holder
+        .learn_more_bg
+          .learn_more_arrow
+        Learn More
+      .stop-icon.stop1
+      .stop-icon.stop2
+      .stop-icon.stop3
+      .stop-icon.stop4
+      .stop-icon.stop5
+      .blue_line.b-line1
+      .blue_line.b-line2
+      .blue_line.b-line3
+      .blue_line.b-line9
+      .blue_line.b-line10
+      .blue_line.b-line11
+      .blue_line.b-line12
+      .blue_line.b-line13
+    .bar
+  #setup
+    #section-two.section-two
+      .container
+        .sectionTwo-headline-container
+          %h2.sectionTwo-headline What is TechDay?
+        .sectionTwo-text-container
+          %p TechDay is a massive science fair for startups. Our 400+ exhibitors have the opportunity to show off their companies to thousands of consumers, the highest caliber investors, hordes of press, the most sought after talent, and the greatest pool of tech enthusiasts looking to celebrate emerging venture.
+          %p Our fourth annual event promises to be better than ever and we’re excited to see all the amazing startups and talent that will join us. It’s free to attend...we hope to see you there!
+        .computer_container
+          .computer-top
+            .computer-top-shade
+              .computer-dot
+              .video-container
+                %iframe#techdayVideo{allowfullscreen: "", frameborder: "0", height: "230", mozallowfullscreen: "", src: "https://player.vimeo.com/video/95119532", webkitallowfullscreen: "", width: "408"}
+              #play.computer-screen
+                .computer-screen-shade
+                  .computer-play-btn
+                    .computer-play-arrow
+          .computer-bottom
+          .computer-stem-shade
+          .computer-stem
+          .computer-footer
+          .computer-shadow
+          .computer-text Video from TechDay 2014
+        .parallax_navigation_holder.pnh-sectiontwo
+          %ul
+            %li
+              #parallax_one.parallax_nav_button.parallax_one
+            %li
+              #parallax_two.parallax_nav_button.parallax_two_active
+            %li
+              #parallax_three.parallax_nav_button.parallax_three
+            %li
+              #parallax_four.parallax_nav_button.parallax_four
+            %li
+              #parallax_five.parallax_nav_button.parallax_five
+        .p-stop-icon.p-stop2
+        .p-stop-icon.p-stop3
+        .p-stop-icon.p-stop4
+        .p-stop-icon.p-stop5
+        .purple_line.p-line1
+        .purple_line.p-line4
+        .purple_line.p-line5
+        .purple_line.p-line6
+        .purple_line.p-line7
+        .purple_line.p-line8
+        .purple_line.p-line9
+       
+      .bar
+    #section-three.section-three
+      .container
+        .sectionThree-headline-container1
+          %h2.sectionThree-headline Who Exhibits?
+        .sectionThree_icon_bg.sectionThree-exhibit_icon
+        .sectionThree-text-container1
+          %p TechDay provides our amazing exhibitors with the unique opportunity to show off their company to literally everyone! We invite startups from around the globe who are working in all industry verticals...the only requirement is that the product must involve something awesome with tech. We make it affordable for everyone - so monster VC funded companies present side by side with bootstrapped startups who are working out of mamas basement.
+          -# =link_to "View Exhibitors", event_exhibitors_path(@event), class: "sponsors_btn"
+        .clear
+        .sectionThree-headline-container2
+          %h2.sectionThree-headline Who Attends?
+        .sectionThree_icon_bg.sectionThree-attend_icon
+        .sectionThree-text-container2
+          %p Are you an early adopter of tech products? Looking for a job at a startup?  Covering the NYC tech scene for a publication? Looking to invest in the next Facebook? Or just a plain old tech enthusiast? Then YOU and thousands like you attend TechDay! The Best Part? It’s FREE! BOOM!
+        .clear
+        .g-stop-icon.g-stop1
+        .g-stop-icon.g-stop2
+        .g-stop-icon.g-stop3
+        .g-stop-icon.g-stop4
+        .g-stop-icon.g-stop5
+        .green_line.g-line1
+        .green_line.g-line2
+        .green_line.g-line3
+        .green_line.g-line4
+        .green_line.g-line5
+        .green_line.g-line6
+        .green_line.g-line7
+        .green_line.g-line8
+        .green_line.g-line9
+        .green_line.g-line10
+        .green_line.g-line11
+        .green_line.g-line12
+        .green_line.g-line13
+        .parallax_navigation_holder.pnh-sectionthree
+          %ul
+            %li
+              #parallax_one.parallax_nav_button.parallax_one
+            %li
+              #parallax_two.parallax_nav_button.parallax_two
+            %li
+              #parallax_three.parallax_nav_button.parallax_three_active
+            %li
+              #parallax_four.parallax_nav_button.parallax_four
+            %li
+              #parallax_five.parallax_nav_button.parallax_five
+      .bar
+    #section-four.section-four
+      .container
+        .sectionFour-headline-container1
+          %h2.sectionFour-headline Investors
+        .sectionFour_icon_bg.sectionFour-investors_icon
+        .sectionFour-text-container1
+          %p Never have there been so many startups simultaneously under one roof. TechDay provides just that, which is exactly why this event is a must-see for Angels and VC’s. Investors will experience the way the community engages with the startups themselves. This year, we’re making it even easier for investors to connect with and meet startups in our exclusive press & investor lounge.
+        .clear
+        .sectionFour-headline-container2
+          %h2.sectionFour-headline Press
+        .sectionFour_icon_bg.sectionFour-press_icon
+        .sectionFour-text-container2
+          %p The first three years of TechDay were extremely Buzzworthy and covered widely in print, online, and on local television.  Our fourth event will continue to host highly regarded journalists from mainstream press to heavily engaged tech blogs.
+        .clear
+        .y-stop-icon.y-stop1
+        .y-stop-icon.y-stop2
+        .y-stop-icon.y-stop3
+        .y-stop-icon.y-stop4
+        .y-stop-icon.y-stop5
+        .yellow_line.y-line1
+        .yellow_line.y-line2
+        .yellow_line.y-line3
+        .yellow_line.y-line4
+        .yellow_line.y-line5
+        .yellow_line.y-line6
+        .yellow_line.y-line7
+        .yellow_line.y-line8
+        .yellow_line.y-line9
+        .yellow_line.y-line10
+        .parallax_navigation_holder.pnh-sectionFour
+          %ul
+            %li
+              #parallax_one.parallax_nav_button.parallax_one
+            %li
+              #parallax_two.parallax_nav_button.parallax_two
+            %li
+              #parallax_three.parallax_nav_button.parallax_three
+            %li
+              #parallax_four.parallax_nav_button.parallax_four_active
+            %li
+              #parallax_five.parallax_nav_button.parallax_five
+      .bar
+    #section-five.section-five
+      .container
+        .sectionFive-headline-container
+          .sectionFive-headline 2014 Venue Map
+        .venue-map
+        .gray-stop-icon.gr-stop1
+        .gray_line.gr-line1
+        .gray_line.gr-line2
+        .gray_line.gr-line3
+        .gray_line.gr-line5
+
+        .parallax_navigation_holder.pnh-sectionFive
+          %ul
+            %li
+              #parallax_one.parallax_nav_button.parallax_one
+            %li
+              #parallax_two.parallax_nav_button.parallax_two
+            %li
+              #parallax_three.parallax_nav_button.parallax_three
+            %li
+              #parallax_four.parallax_nav_button.parallax_four
+            %li
+              #parallax_five.parallax_nav_button.parallax_five_active
+      .push
+    .footer
+      .footer-container
+        .links-container
+          =link_to "Register to Exhibit", "", class: "link"
+          =link_to "Register to Attend", "", class: "link"
+          =link_to "About The Event", "", class: "link mobile"
+          =link_to "Contact Us", "", class: "link"
+        .links-container
+          =link_to "Exhibitors", "", class: "link mobile"
+          =link_to "Sponsors", "", class: "link mobile"
+          =link_to "Blog", "", class: "link mobile"
+        .links-container
+          =link_to "Privacy Policy", "", class: "link"
+          =link_to "Terms of Service", "", class: "link"
+        .social-media-container
+          .social-media-title Connect with Techday
+          =link_to "", "https://www.facebook.com/nytechday", class: "social-media-icons fb", target: "_blank"
+          =link_to "", "https://twitter.com/NYTechDay", class: "social-media-icons twitter", target: "_blank"
+          =link_to "", "http://www.linkedin.com/company/ny-tech-day", class: "social-media-icons linkedin", target: "_blank"
+      %p.copyright TSC TechDay &copy 2014, Inc. TSC TechDay is a division of The Startup Companies, Inc.
+.height
